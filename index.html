@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatApp - Nakul</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/peerjs@1.4.7/dist/peerjs.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Section -->
+        <div id="loginSection" class="login-section">
+            <div style="display: flex; align-items: center; gap: 90px;">
+                <div>
+                    <h2 style="color: white;">Enter Chat</h2>
+                    <input type="text" id="username" placeholder="Enter your name">
+                    <button onclick="login()">Join Chatting</button>
+                </div>
+                <div class="sideimg">
+                    <img width="250px" src="cute-businessman-character-sitting-on-modern-home-office-desk-with-chair-table-and-with-pc-computer-drawer-cabinet-isolated-vector-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Section -->
+        <div id="chatSection" class="chat-section hidden">
+            <div class="chat-header">
+                <span id="userInfo"></span>
+                <div id="connectionInfo"></div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <!-- Messages will be displayed here -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type a message...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
